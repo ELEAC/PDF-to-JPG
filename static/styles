@@ -1,0 +1,19 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    text-align: center;
+    margin: 50px;
+}
+
+#loading {
+    color: green;
+    font-weight: bold;
+}
+
+#downloadLink {
+    color: blue;
+    margin-top: 10px;
+    display: block;
+}
