@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>PDF to JPG Converter</title>
+</head>
+<body>
+    <div class="container">
+        <form id="pdfForm" action="/convert" method="post" enctype="multipart/form-data">
+            <input type="file" name="pdfInput" accept=".pdf">
+            <button type="submit">Convert</button>
+        </form>
+        <div id="loading" style="display: none;">Processing...</div>
+        <a id="downloadLink" style="display: none;" href="#">Download</a>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
